@@ -16,4 +16,11 @@ export class Company {
       lng: faker.location.longitude(),
     };
   }
+
+  popupText(): string {
+    return `
+      <h1>Company Name: ${this.companyName}</h1>
+      <h3>Catchphrase: ${this.catchPhrase}</h3>
+    `;
+  }
 }

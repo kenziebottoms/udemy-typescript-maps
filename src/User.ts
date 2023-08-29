@@ -14,4 +14,8 @@ export class User {
       lng: faker.location.longitude(),
     };
   }
+
+  popupText(): string {
+    return `<h1>User Name: ${this.name}</h1>`;
+  }
 }
